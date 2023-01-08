@@ -1,0 +1,17 @@
+{
+  "name": "mysql.js",
+  "version": "1.0.0",
+  "description": "Movie Database",
+  "main": "app.js",
+  "scripts": {
+    "test": "connect"
+  },
+  "keywords": [
+    "db"
+  ],
+  "author": "Kaballah",
+  "license": "ISC",
+  "dependencies": {
+    "mysql": "^2.18.1"
+  }
+}

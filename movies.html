@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <script src="https://kit.fontawesome.com/e9f820d04b.js" crossorigin="anonymous"></script>
+
+    <title>Tickets</title>
+
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+
+    <div class="nav-bar">
+        <div class="logo" >
+            <a href="./index.html" class=" animate__animated animate__fadeInLeft" id='logo' onmouseover="onHover()" ">MovieWorks</a>
+        </div>
+
+        <a href="./login.html">
+            <i class="fa-solid fa-circle-user" title="Login/Sign Up"></i>
+        </a>
+        <a href="./cart.html">
+            <div class="cart">
+                <i class="fa-solid fa-cart-shopping" title="Cart"></i>
+                <div class="cartAmount" id="cartAmount" >0</div>
+            </div>
+        </a>
+        <a href="./about.html">
+            <i class="fa-solid fa-address-card" title="About Us"></i>
+        </a>
+        <a href="./faq.html">
+            <i class="fa-solid fa-circle-question" title="FAQ"></i>
+        </a>
+        <a href="./contact.html">
+            <i class="fa-solid fa-address-book" title="Contact"></i>
+        </a>
+        <a href="./movies.html" class="active" >
+            <i class="fa-solid fa-ticket" title="Ticket"></i>
+        </a>
+        <a href="./index.html">
+            <i class="fa-solid fa-house" title="Home"></i>
+        </a>
+    </div>
+
+
+    <!-- Image Display -->
+    
+    <div class="images-container">
+
+        <div class="mySlides">
+            <img src="./images/movies/spiderman.jpg">
+        </div>
+            
+        <div class="mySlides">
+            <img src="./images/movies/bambi.jpg">
+        </div>
+            
+        <div class="mySlides">
+            <img src="./images/movies/pennywise.jpg">
+        </div>
+
+        <div class="mySlides">
+            <img src="./images/movies/panther.jpg">
+        </div>
+            
+        <div class="mySlides">
+            <img src="./images/movies/bolt.jpg">
+        </div>
+            
+        <div class="mySlides">
+            <img src="./images/movies/tmnt.jpg">
+        </div>
+
+        <div class="mySlides">
+            <img src="./images/movies/pirates.jpg">
+        </div>
+            
+        <div class="mySlides">
+            <img src="./images/movies/batman.jpg">
+        </div>
+            
+        <div class="mySlides">
+            <img src="./images/movies/chucky.jpg">
+        </div>
+
+        <div class="mySlides">
+            <img src="./images/movies/freddy.jpg">
+        </div>
+            
+        <div class="mySlides">
+            <img src="./images/movies/xmen.jpg">
+        </div>
+            
+        <a class="prev" onclick="plusSlides(-1)" style="font-size: 50px;" >PREV</a>
+        <a class="next" onclick="plusSlides(1)" style="font-size: 50px;" >NEXT</a>
+
+        <div style="text-align:center; top: 0;" class="myDots">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span> 
+            <span class="dot" onclick="currentSlide(8)"></span> 
+            <span class="dot" onclick="currentSlide(9)"></span>
+            <span class="dot" onclick="currentSlide(10)"></span> 
+            <span class="dot" onclick="currentSlide(11)"></span> 
+        </div>
+
+        
+    </div>
+
+    <marquee behavior="" direction="">
+        <h2>Other Screening Movies</h2>
+    </marquee>
+
+    <!-- Search Bar -->
+
+    <center>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for any movie.." title="Type in a movie">
+    </center>
+
+    <div class="movies" id="movies">
+
+    </div>
+
+    <center>
+    </div>
+        
+    <center>
+        <div class="footer">
+
+            <br>
+            <br>
+
+            <div>
+                <a href="./index.html">Home</a>
+                <a href="./movies.html">Tickets</a>
+                <a href="./contact.html">Contact Us</a>
+                <a href="./faq.html">FAQ</a>
+                <a href="./about.html">About Us</a>
+            </div>
+
+            <div style="padding-top: 20px;">
+                <a href="https://www.imax.com/">IMAX</a>
+                <a href="https://www.centurycinemaxkenya.com/">20<sup>th</sup> Centuary</a>
+                <a href="http://cinematreasures.org/theaters/26329">Kenya Cinemas</a>
+                <a href="https://www.cameocinema.com/">Cameo Cinemas</a>
+                <a href="https://kenya.jantareview.com/Nairobi/biz_460725/Fox-Drive-In-Cinema">Fox Drive Inn</a>
+            </div>
+            <div style="padding: 10px; ">
+                <p>&copy; 2020 - 2022 by MovieWorks.com, Inc.</p>
+            </div>
+
+        </div> 
+    </center>
+
+    <script src="./js/mysql.js"></script>
+    <script src="./js/tickets.js" defer></script>
+    
+</body>
+</html>
