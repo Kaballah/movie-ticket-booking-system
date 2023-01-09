@@ -36,6 +36,41 @@ function showSlides(n) {
     dots[slideIndex-1].className += " active";
 }
 
+// Search Bar Function
+
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    var results = [];
+
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    // ul = document.getElementById("myUL");
+    // li = ul.getElementsByTagName("li");
+    // li = document.getElementsByClassName("movies");
+
+    for (i = 0; i < shopItemsData.length; i++) {
+        // a = li[i].getElementsByTagName("p")[0];
+        // a = li[i].name[0];
+        // txtValue = a.textContent || a.innerText;
+        // txtValue = shopItemsData.name;
+
+        // if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        //     li[i].style.display = "";
+        // } else {
+        //     li[i].style.display = "none";
+        // }
+
+        for(key in shopItemsData[i]) {
+            if(shopItemsData.toUpperCase[i][key].indexOf(filter) > -1) {
+                results.push(shopItemsData[i]);
+                shopItemsData[i].style.display = "";
+            } else {
+                shopItemsData[i].style.display = "none";
+            }
+        }
+    }
+}
+
 // Movie Page
 
 let shop = document.getElementById("movies");
