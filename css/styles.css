@@ -18,6 +18,8 @@ body {
 .nav-bar {
     background-color: blue;
     overflow: hidden;
+    z-index: 100 !important;
+    position: relative;
 }
 
 .nav-bar a {
@@ -223,7 +225,7 @@ marquee {
     position: absolute;
     top: 9%;
     width: 30%;
-    height: 325px;
+    height: 60vh;
     padding-top: 290px;
     margin-top: -22px;
     color: white;
@@ -235,10 +237,15 @@ marquee {
     border-radius: 0 3px 3px 0;
     user-select: none;
 }
+
+.prev {
+    top: 0;
+}
   
 .next {
     cursor: url(/images/cursor/mouse-right.png) 14 14,auto;
     right: 0;
+    top: 0;
     border-radius: 3px 0 0 3px;
 }
   
