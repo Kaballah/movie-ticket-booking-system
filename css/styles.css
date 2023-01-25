@@ -225,7 +225,7 @@ marquee {
     position: absolute;
     top: 9%;
     width: 30%;
-    height: 60vh;
+    height: 390px;
     padding-top: 290px;
     margin-top: -22px;
     color: white;
@@ -247,6 +247,12 @@ marquee {
     right: 0;
     top: 0;
     border-radius: 3px 0 0 3px;
+}
+
+@media only screen and (max-width: 900px)  {
+    .prev, .next {
+        height: 20vh;
+    }
 }
   
 .prev:hover, .next:hover {
